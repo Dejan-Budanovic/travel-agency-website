@@ -1,0 +1,63 @@
+{
+  "travel": {
+    "destinations": [
+    {
+      "id": 1,
+      "destination": "London",
+      "startingDate": "12.09.2021.",
+      "duration": 7,
+      "price": "950 €",
+      "imagesource": "../img/london.jpg",
+      "modaltext": "London Text"
+    },
+    {
+      "id": 2,
+      "destination": "New York",
+      "startingDate": "27.06.2021.",
+      "duration": 10,
+      "price": "1750 €",
+      "imagesource": "../img/newyork.jpg",
+      "modaltext": "New York Text"
+    },
+    {
+      "id": 3,
+      "destination": "Paris",
+      "startingDate": "30.01.2021.",
+      "duration": 7,
+      "price": "750 €",
+      "imagesource": "../img/paris.jpg",
+      "modaltext": "Paris Text"
+    },
+    {
+      "id": 4,
+      "destination": "Rome",
+      "startingDate": "14.02.2021.",
+      "duration": 5,
+      "price": "800 €",
+      "imagesource": "../img/rome.jpg",
+      "modaltext": "Rome Text"
+    },
+    {
+      "id": 5,
+      "destination": "Thailand",
+      "startingDate": "01.04.2021.",
+      "duration": 15,
+      "price": "1550 €",
+      "imagesource": "../img/tahiland.jpg",
+      "modaltext": "Thailand Text"
+    },
+    {
+      "id": 6,
+      "destination": "Venice",
+      "startingDate": "29.05.2021.",
+      "duration": 5,
+      "price": "550 €",
+      "imagesource": "../img/venice.jpg",
+      "modaltext": "Venice Text"
+    }
+  ],
+  "reservations": [
+
+  ]
+  }
+}

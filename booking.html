@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Travel - Contact</title>
+  </head>
+  <body>
+    <!-- Main Header -->
+    <header>
+      <!-- Container -->
+      <div class="container">
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo_1.jpg" width="80" height="80" alt="Travel Logo" loading="lazy">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="about-us.html">About Us</a>
+              <a class="nav-link" href="destinations.html">Destinations</a>
+              <a class="nav-link" href="booking.html">Booking</a>
+              <a class="nav-link" href="gallery.html">Gallery</a>
+              <a class="nav-link" href="blog.html">Blog</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Main Navigation END -->
+      </div>
+      <!-- Container END -->
+    </header>
+    <!-- Main Header END -->
+    <main>
+      <img class="w-100 marg-btm" src="img/Travel-GettyImages.jpg" alt="Travel Booking">
+      <div class="container marg-btm clearfix">
+          <!-- Destinations Table -->
+          <div id="tabelaWrapper" class="marg-btm">
+            <table id="tabela" class="table table-striped table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th>Destination</th>
+                  <th>Starting date</th>
+                  <th>Duration</th>
+                  <th>Price</th>
+                  <th>Details</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+              </tbody>
+            </table>
+          </div>
+          <!-- Destinations Table END -->
+        <button id="viewReservations" class="btn btn-orange float-right" type="btn" name="button" onclick="showReservations()">View reservations</button>
+        <!-- Reservations Table -->
+        <div id="tabela2Wrapper">
+          <table id="tabela2" class="table table-striped table-hover table-bordered">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Destination</th>
+                <th>Price</th>
+                <th>Note</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="tbody2">
+            </tbody>
+          </table>
+          <div class="top-border-orange total-sum-wrapper">
+            <p id="total-sum"></p>
+          </div>
+        </div>
+        <!-- Reservations Table END -->
+
+        <!-- Details Modal -->
+        <div class="modal fade" id="detailsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalHeader"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="w-100" id="modalImage" src="" alt="">
+                <p id="modalText"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Details Modal END -->
+        <!-- Reservations Modal -->
+        <div class="modal fade" id="reservationsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Make Reservation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form id="forma" role="form">
+                  <div class="form-group">
+                    <p id="modal1"></p>
+                  </div>
+                  <div class="form-group">
+                    <p id="modal2"</p>
+                  </div>
+                  <hr>
+                  <div class="form-group">
+                    <label for="ime">Name:</label>
+                    <input id="ime" class="form-control" type="text" name="ime">
+                  </div>
+                  <div class="form-group">
+                    <label for="prezime">Surname:</label>
+                    <input id="prezime" class="form-control" type="text" name="prezime">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email adress:</label>
+                    <input id="email" class="form-control" type="email" name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="jmbg">JMBG:</label>
+                    <input id="jmbg" class="form-control" type="text" name="jmbg">
+                  </div>
+                  <div class="form-group">
+                    <label for="komentar">Note:</label>
+                    <textarea id="komentar" name="komentar" class="form-control"></textarea>
+                  </div>
+                  <input id="posalji" type="submit" class="btn btn-primary" value="Posalji">
+                </form>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Reservations Modal END -->
+      </div>
+    </main>
+    <!-- Main Footer -->
+    <footer class="main-footer marg-top">
+      <!-- Footer Navigation -->
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <small class="nav-link">&copy;SmartInIt 2020</small>
+        </li>
+        <li class="nav-item">
+          <small><a class="nav-link active" href="index.html">Home</a></small>
+        </li>
+        <li class="nav-item">
+          <small><a class="nav-link" href="#">Privacy Policy</a></small>
+        </li>
+        <li class="nav-item">
+          <small><a class="nav-link" href="#">Contact Support</a></small>
+        </li>
+      </ul>
+      <!-- Footer Navigation END -->
+    </footer>
+    <!-- Main Footer END -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/tabela.js" charset="utf-8"></script>
+  </body>
+</html>

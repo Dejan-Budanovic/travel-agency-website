@@ -1,0 +1,163 @@
+.cover-img-vid {
+  max-height: 50vh;
+  width: 100%  !important;
+  object-fit: cover;
+}
+.top-border-orange {
+  border-top: 2px solid #f2a463;
+}
+.right-border-orange {
+  border-right: 2px solid #f2a463;
+}
+.destinations-article {
+  border: 2px solid #f2a463;
+  padding: 20px;
+}
+.destinations-article button {
+  background-color: #f2a463;
+}
+.destinations-section img {
+  height: 200px;
+}
+.orange-heading {
+  text-transform: uppercase;
+  color: #f2a463;
+}
+.marg-btm {
+  margin-bottom: 40px;
+}
+.marg-top {
+  margin-top: 40px;
+}
+.img-opacity {
+  opacity: .5;
+}
+.position-relative {
+  position: relative;
+}
+.text-translate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.text-opacity {
+  opacity: .5;
+}
+.text-opacity button {
+  padding: 10px 20px;
+  background-color: transparent;
+}
+.main-footer {
+  height: 50px;
+  background-color: #f2a463;
+  padding-top: 15px;
+  }
+.btn-orange {
+  background-color: #f2a463;
+  color: #fff;
+}
+.btn-outline-orange {
+  color: #f2a463;
+  border-color: #f2a463;
+}
+.btn-outline-orange:hover {
+  background-color: #f2a463;
+}
+.google-maps-wrapper {
+  height: 400px;
+}
+.footer-nav li:not(:last-child) {
+  border-right: 1px solid black;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.nav-link {
+  padding: 0 1rem;
+}
+.top-dest-height {
+  margin-bottom: 15px;
+  height: 500px;
+}
+.offer-article {
+  background-color: #ffeb99;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.gal-div {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 15px;
+}
+.upload-button-container {
+  position: relative;
+  display: block;
+  min-height: 115px;
+  overflow: hidden;
+}
+#uploadImg {
+  background-image: url("../img/upload_photo.png");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  height: 100px;
+  width: 100px;
+  text-indent: -99999px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.blog-article {
+  border: 1px solid darkgrey;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.article-property {
+  display: inline-block;
+  margin-right: 20px;
+}
+.side-nav-header {
+  background-color: #f2a463;
+  color: #fff;
+}
+.side-nav-header h2 {
+  padding-left: 10px;
+}
+.commentTextWindow span {
+  content: "";
+  background-image: url("data:image/svg+xml,<svg width='3em' height='3em' viewBox='0 0 16 16' class='bi bi-person-circle' fill='%23f2a463' xmlns='http://www.w3.org/2000/svg'><path d='M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z'/><path fill-rule='evenodd' d='M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'/><path fill-rule='evenodd' d='M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z'/></svg>");
+  background-repeat: no-repeat;
+  height: 3em;
+  width: 3em;
+  float: left;
+}
+.commentText {
+  border: 2px solid #f2a463;
+  display: inline-block;
+  width: 90%;
+  min-height: 3em;
+  margin-left: 30px;
+  line-height: 1.5;
+  padding: 5px;
+  word-wrap: break-word;
+}
+.img-padding {
+  padding: 5px;
+}
+.total-sum-wrapper {
+  margin-top: 20px;
+}
+#total-sum {
+  font-size: 30px;
+  font-weight: 200;
+  float: right;
+  margin-right: 50px;
+}
+@media (max-width: 768px) {
+  .right-border-orange {
+    border-right: none;
+    border-bottom: 2px solid #f2a463;
+  }
+
+}

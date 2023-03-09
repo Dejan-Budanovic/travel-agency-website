@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Travel - Gallery</title>
+  </head>
+  <body>
+    <!-- Main Header -->
+    <header>
+      <!-- Container -->
+      <div class="container">
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo_1.jpg" width="80" height="80" alt="Travel Logo" loading="lazy">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="about-us.html">About Us</a>
+              <a class="nav-link" href="destinations.html">Destinations</a>
+              <a class="nav-link" href="booking.html">Booking</a>
+              <a class="nav-link" href="gallery.html">Gallery</a>
+              <a class="nav-link" href="blog.html">Blog</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Main Navigation END -->
+      </div>
+      <!-- Container END -->
+    </header>
+    <!-- Main Header END -->
+    <main>
+      <!-- Contest Article -->
+      <div class="top-border-orange marg-btm">
+        <article class="position-relative">
+          <img class="w-100 img-opacity" src="img/contest_image.jpg" alt="Contest">
+          <div class="text-center text-translate text-opacity">
+            <h2>Upload a photo and win a prize</h2>
+            <p>Upload Your photo from most interesting destinations and get a chance to win a prize<p>
+            <p>You can win a travel for two persons and many other prizes</p>
+          </div>
+        </article>
+      </div>
+      <!-- Contest Article END -->
+      <!-- Container -->
+      <div class="container">
+        <div class="row" id="imgGallery">
+          <!-- Gallery -->
+          <div class="col-xs-12 col-sm-6 col-md-3 gal-div">
+            <img class="w-100 h-100" src="img/athen.jpg" alt="Athen">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 gal-div">
+            <img class="w-100 h-100" src="img/havana.jpg" alt="Havana">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 gal-div">
+            <img class="w-100 h-100" src="img/london.jpeg" alt="London">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 gal-div">
+            <img class="w-100 h-100" src="img/paris.jpg" alt="Paris">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 gal-div">
+            <img class="w-100 h-100" src="img/quiske.jpg" alt="Quiske">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 gal-div">
+            <img class="w-100 h-100" src="img/rio.jpg" alt="Rio">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 gal-div">
+            <img class="w-100 h-100" src="img/rome.jpg" alt="Rome">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 gal-div">
+            <img class="w-100 h-100" src="img/taj_mahal.jpg" alt="Taj Mahal">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 gal-div">
+            <img class="w-100 h-100" src="img/thailand.jpg" alt="Thailand">
+          </div>
+          <!-- Gallery END -->
+        </div>
+      </div>
+      <!-- Container END -->
+      <!-- Upload Button -->
+      <div class="upload-button-container">
+        <input type="file" id="uploadImg" name="Upload" value="Upload" onchange="uploadimage()" accept="image/*">
+      </div>
+      <!-- Upload Button END -->
+    </main>
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- Footer Navigation -->
+      <ul class="nav justify-content-center footer-nav">
+        <li class="nav-item">
+          <small class="nav-link"><em>&copy;SmartInIt 2020</em></small>
+        </li>
+        <li class="nav-item">
+          <small><a class="nav-link active" href="index.html"><em>Home</em></a></small>
+        </li>
+        <li class="nav-item">
+          <small><a class="nav-link" href="#"><em>Privacy Policy</em></a></small>
+        </li>
+        <li class="nav-item">
+          <small><a class="nav-link" href="#"><em>Contact Support</em></a></small>
+        </li>
+      </ul>
+      <!-- Footer Navigation END -->
+    </footer>
+    <!-- Main Footer END -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>
